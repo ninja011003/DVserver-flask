@@ -27,8 +27,9 @@ def handle_get_request():
     r = requests.get(url)
     data = r.json()
     #print(data['bestMatches'][0]['1. symbol'])
+    print(data)
     stock_symbol =data['bestMatches'][0]['1. symbol']
-    print(data['bestMatches'])
+    
     # Get today's date
     today = datetime.now().date()
     # Get the same date one month ago

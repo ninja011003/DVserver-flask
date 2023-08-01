@@ -1,7 +1,6 @@
 gunicorn
 flask
 datetime
-io
 requests
 matplotlib
 base64

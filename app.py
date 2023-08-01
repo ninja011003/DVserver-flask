@@ -19,11 +19,12 @@ def unix_timestamp_to_yyyy_mm_dd(unix_timestamp):
 @app.route('/',methods=['GET'])
 def handle():
     return 'dv vizualization server'
-
+#HC0XU4M8A1I6N6BU
+#22SWW3DF4I4QDAWY
 @app.route('/getStockGraph', methods=['GET'])
 def handle_get_request():
     stock_name = request.args.get('stockName')
-    url = 'https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords='+stock_name+'&apikey=22SWW3DF4I4QDAWY'
+    url = 'https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords='+stock_name+'&apikey=HC0XU4M8A1I6N6BU'
     r = requests.get(url)
     data = r.json()
     #print(data['bestMatches'][0]['1. symbol'])

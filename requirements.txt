@@ -3,4 +3,3 @@ flask
 datetime
 requests
 matplotlib
-base64
